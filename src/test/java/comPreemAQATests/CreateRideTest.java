@@ -9,9 +9,8 @@ public class CreateRideTest extends LoginTest{
     public CalendarPage calendarPage;
     public CreateRidePage createRidePage;
 
-
     @Test(priority = 1)
-    public void checkDurationFieldEnabledWhenRouteNotSelected() {
+    public void checkDurationFieldEnabledWhenRouteNotSelected() throws InterruptedException {
         calendarPage = new CalendarPage(driver);
         createRidePage = new CreateRidePage(driver);
         calendarPage.clickCreateRide();
@@ -21,7 +20,8 @@ public class CreateRideTest extends LoginTest{
     }
 
     @Test(priority = 2)
-    public void checkDurationFieldDisabledWhenRouteSelected() {
+    public void checkDurationFieldDisabledWhenRouteSelected() throws InterruptedException {
+        loginMethod();
         calendarPage = new CalendarPage(driver);
         createRidePage = new CreateRidePage(driver);
         calendarPage.clickCreateRide();

@@ -9,8 +9,7 @@ public class LoginTest extends PopUpHandle{
     public static LoginPage loginPage;
     public static CalendarPage calendarPage;
 
-    @BeforeMethod(alwaysRun = true)
-    public void testLogin() throws InterruptedException {
+    public void loginMethod() throws InterruptedException {
         driver.get("https://testing.gopreem.com/");
         loginPage = new LoginPage(driver);
         Thread.sleep(3000);
@@ -22,7 +21,7 @@ public class LoginTest extends PopUpHandle{
         loginPage.clickLoginTwo();
     }
 
-    @Test
+    @Test(priority = 1)
     public void checkUnsuccessfulLogin(){
         driver.get("https://testing.gopreem.com/");
         loginPage = new LoginPage(driver);
@@ -36,7 +35,7 @@ public class LoginTest extends PopUpHandle{
         softAssert.assertAll();
     }
 
-    @Test(groups = "groupTwo")
+    @Test(priority = 2)
     public void checkSuccessfulLogin(){
         driver.get("https://testing.gopreem.com/");
         loginPage = new LoginPage(driver);
@@ -53,7 +52,7 @@ public class LoginTest extends PopUpHandle{
             e.printStackTrace();
         }
         loginPage.clickLogin();
-        loginPage.inputLogin("test01@cuvox.de");
+        loginPage.inputLogin("Rold1929@einrot.com");
         loginPage.inputPasswd("a123b123-1");
         loginPage.clickLoginTwo();
         SoftAssert softAssert = new SoftAssert();

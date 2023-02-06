@@ -3,6 +3,7 @@ package comPreemAQATests;
 import com_preemAQAPajes.CalendarPage;
 import com_preemAQAPajes.CreateRidePage;
 import com_preemAQAPajes.RideDetailsPage;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -13,11 +14,12 @@ public class CalendarTest extends LoginTest{
     public static CreateRidePage createRidePage;
     public static RideDetailsPage rideDetailsPage;
 
+
     @Test (priority = 1)
-    public void testCreateRideWithRoute() {
+    public void testCreateRideWithRoute()  {
         calendarPage = new CalendarPage(driver);
-        calendarPage.clickCreateRide();
         createRidePage = new CreateRidePage(driver);
+        calendarPage.clickCreateRide();
         createRidePage.clearRideName();
         createRidePage.enterRideName("RideWithSelenium");
         createRidePage.setSelectRoute();

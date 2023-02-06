@@ -3,6 +3,7 @@ package comPreemAQATests;
 import com_preemAQAPajes.CalendarPage;
 import com_preemAQAPajes.RideHistoryPage;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

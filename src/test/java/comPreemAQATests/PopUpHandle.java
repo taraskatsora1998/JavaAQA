@@ -5,6 +5,7 @@ import org.openqa.selenium.UsernameAndPassword;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import java.time.Duration;
@@ -16,7 +17,6 @@ protected WebDriver driver;
 
     @BeforeMethod(alwaysRun = true)
     public void popUp(ITestContext context) {
-        //WebDriverManager.chromedriver().setup(); s
         System.setProperty("webdriver.chrome.driver", "/Users/quart_alex/Desktop/com_preemAQA/chromedrivers/chromedriver");
         driver = new ChromeDriver();
         context.setAttribute("myDriver", driver);
@@ -26,13 +26,10 @@ protected WebDriver driver;
 
     }
 
-    /*
     @AfterMethod
     public void quitDriver() {
         if (driver != null) {
             driver.quit();
         }
     }
-    *
-     */
 }
