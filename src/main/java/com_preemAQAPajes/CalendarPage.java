@@ -1,4 +1,4 @@
-package com_preemAQA;
+package com_preemAQAPajes;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;

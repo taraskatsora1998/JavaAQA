@@ -11,7 +11,7 @@
 
         <classes>
 
-            <class name = "comPreemAQA.RideHistoryTest" />
+            <class name = "comPreemAQATests.RideHistoryTest" />
 
         </classes>
 

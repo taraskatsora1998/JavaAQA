@@ -1,9 +1,7 @@
-package comPreemAQA;
+package comPreemAQATests;
 
-import com_preemAQA.CalendarPage;
-import com_preemAQA.CreateRidePage;
-import org.eclipse.sisu.inject.Soft;
-import org.testng.Assert;
+import com_preemAQAPajes.CalendarPage;
+import com_preemAQAPajes.CreateRidePage;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

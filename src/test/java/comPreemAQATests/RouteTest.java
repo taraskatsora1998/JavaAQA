@@ -1,8 +1,8 @@
-package comPreemAQA;
+package comPreemAQATests;
 
-import com_preemAQA.CalendarPage;
-import com_preemAQA.MyRoutesPage;
-import com_preemAQA.RouteDetailsPage;
+import com_preemAQAPajes.CalendarPage;
+import com_preemAQAPajes.MyRoutesPage;
+import com_preemAQAPajes.RouteDetailsPage;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 

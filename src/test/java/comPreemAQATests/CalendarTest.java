@@ -1,8 +1,8 @@
-package comPreemAQA;
+package comPreemAQATests;
 
-import com_preemAQA.CalendarPage;
-import com_preemAQA.CreateRidePage;
-import com_preemAQA.RideDetailsPage;
+import com_preemAQAPajes.CalendarPage;
+import com_preemAQAPajes.CreateRidePage;
+import com_preemAQAPajes.RideDetailsPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;

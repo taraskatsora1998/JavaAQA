@@ -1,4 +1,4 @@
-package com_preemAQA;
+package com_preemAQAPajes;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

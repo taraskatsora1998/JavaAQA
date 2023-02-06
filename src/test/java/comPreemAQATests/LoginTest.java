@@ -1,10 +1,7 @@
-package comPreemAQA;
+package comPreemAQATests;
 
-import com_preemAQA.CalendarPage;
-import com_preemAQA.LoginPage;
-import org.eclipse.sisu.inject.Soft;
-import org.openqa.selenium.HasAuthentication;
-import org.openqa.selenium.UsernameAndPassword;
+import com_preemAQAPajes.CalendarPage;
+import com_preemAQAPajes.LoginPage;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
